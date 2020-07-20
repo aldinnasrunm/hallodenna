@@ -16,4 +16,10 @@ function myFunction() {
     nav.classList.remove("sticky");
   }
 }
+// make love click
+const love = document.querySelector(".love img");
+love.addEventListener("click", () => {
+  love.classList.toggle("active");
+  document.querySelector(".picProfile").classList.toggle("active");
+});
 console.log(sticky);
