@@ -1,0 +1,22 @@
+/* header styling */
+header {
+  background-color: aqua;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 50px;
+  height: 100vh;
+}
+
+/* end of header styling */
+
+/* main styling */
+#mainArticle {
+  box-sizing: border-box;
+  padding: 50px 10%;
+}
+/* end of main styling */
+
+/* responsive breakoint */
+@media screen and (max-width);

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* navbar styling */
+nav {
+  width: 100%;
+  display: flex;
+  background-color: rgba(146, 160, 24, 0.39);
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 100px;
+  align-items: center;
+  color: aliceblue;
+  position: sticky;
+  transform: translateY(-100px);
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  transform: translateY(0);
+  background-color: black;
+  transition: all 0.5s;
+}
+
+nav .logo {
+  font-family: cursive;
+  display: none;
+}
+nav.sticky .logo {
+  font-family: cursive;
+  display: inline;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 0.8em;
+}
+
+nav ul li a:hover {
+  color: brown;
+}
+
+.menu-toggle {
+  display: none;
+  height: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: aliceblue;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -1px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+/* hamburger css animation  */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:last-child {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:last-child {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+/* end of navbar */
+/* RESPONSIVE BREAKPOINT */
+
+/* mini size */
+@media screen and (max-width: 786px) {
+  nav ul {
+    width: 80%;
+    font-size: 1.2em;
+  }
+
+  nav.sticky ul {
+    position: absolute;
+    flex-direction: column;
+    left: 100vw;
+    top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    font-size: 1.2em;
+    transform: translateX(100%);
+    z-index: 0;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    left: 0;
+    background-color: #000000;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    display: none;
+  }
+  nav.sticky .menu-toggle {
+    display: flex;
+  }
+}
