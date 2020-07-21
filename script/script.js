@@ -23,3 +23,10 @@ love.addEventListener("click", () => {
   document.querySelector(".picProfile").classList.toggle("active");
 });
 console.log(sticky);
+new Glider(document.querySelector(".glider"), {
+  slidesToShow: 1.5,
+  slidesToScroll: 2,
+  draggable: true,
+  itemWidth: 300,
+  exactWidth: true,
+});

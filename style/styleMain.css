@@ -197,7 +197,33 @@ main section:nth-child(even) {
 /* galery styling */
 #galery {
   height: 500px;
+  background-image: url("../img/background.svg");
 }
+#galery::before{
+  content: "GAME";
+  font-size: 8em;
+  position: absolute;
+  color: rgba(240, 248, 255, 0);
+  -webkit-text-stroke: rgba(255, 238, 0, 0.856) 2px;
+}
+#galery #title{
+  text-align: center;
+  padding: 0 0 .5em;
+  font-size: 4em;
+}
+
+#card{
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;  
+  background:rgba(255, 255, 255, 0.123);
+  margin:0 20px;
+  padding: 100px;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+
+}
+
 /* end of galery styling */
 /* end of main styling */
 
