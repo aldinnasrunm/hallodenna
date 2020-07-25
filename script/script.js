@@ -17,6 +17,8 @@ function myFunction() {
   }
 }
 // make love click
+
+//make carousel
 const love = document.querySelector(".love img");
 love.addEventListener("click", () => {
   love.classList.toggle("active");

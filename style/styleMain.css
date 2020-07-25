@@ -151,25 +151,26 @@ main section:nth-child(even) {
   padding: 30px 5%;
   height: 300px;
   display: grid;
-  grid-template-rows: 3.5em 75px 50px ;
+  grid-template-rows: 3.5em 75px 50px;
   justify-content: center;
   text-align: center;
   grid-row-gap: 25px;
+  overflow: hidden;
 }
-#product h1{
+#product h1 {
   font-size: 3em;
 }
-#product .iconApp{
+#product .iconApp {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 80vw;
   position: relative;
 }
-#product .iconApp img{
+#product .iconApp img {
   width: 150%;
 }
-#product::before{
+#product::before {
   content: "TOOLS";
   font-size: 10em;
   position: absolute;
@@ -178,20 +179,6 @@ main section:nth-child(even) {
   right: 50px;
   transform: translateY(100px);
 }
-#product .iconSocial{
-  width: 20%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.iconSocial a{
-  color: var(--gray-black);
-  cursor: pointer;
-}
-.iconSocial a:hover{
-  color: var(--medium-gren);
-}
 
 /* end of product styling */
 /* galery styling */
@@ -199,42 +186,144 @@ main section:nth-child(even) {
   height: 500px;
   background-image: url("../img/background.svg");
 }
-#galery::before{
+#galery::before {
   content: "GAME";
   font-size: 8em;
   position: absolute;
   color: rgba(240, 248, 255, 0);
   -webkit-text-stroke: rgba(255, 238, 0, 0.856) 2px;
 }
-#galery #title{
+#galery #title {
   text-align: center;
-  padding: 0 0 .5em;
+  padding: 0 0 0.5em;
   font-size: 4em;
 }
 
-#card{
+#card {
   display: grid;
   place-items: center;
-  box-sizing: border-box;  
-  background:rgba(255, 255, 255, 0.123);
-  margin:0 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.123);
+  margin: 0 20px;
   padding: 100px;
   border-radius: 25px;
   backdrop-filter: blur(15px);
-
 }
 
 /* end of galery styling */
+/* quote styling  */
+#quote {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 400px;
+}
+#quote::before {
+  content: "START NOW";
+  position: absolute;
+  font-size: 10em;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px #0f54244b;
+}
+#quote h1 {
+  font-size: 3em;
+  color: var(--gray-black);
+}
+#quote span p {
+  font-size: 0.8em;
+  font-family: "Courier New", Courier, monospace;
+}
+/* end of quote styling */
+/* about styling */
+#about {
+  display: grid;
+  place-items: center;
+}
+#about .iconSocial {
+  width: 20%;
+  padding: 25px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconSocial a {
+  color: var(--gray-light);
+  cursor: pointer;
+}
+.iconSocial a:hover {
+  color: var(--light-gren);
+}
+/* end of about styling */
+
 /* end of main styling */
+
+/* footer styling */
+footer {
+  text-align: center;
+  background: var(--dark-green);
+  font-size: 0.8em;
+}
+/* end of footer styling */
 
 /* responsive breakoint */
 @media screen and (max-width: 786px) {
-  #profile {grid;
-    grid-row: 1/2;
+  /* header styling */
+  header h1 {
+    font-size: 4em;
+  }
+
+  /* profile styling */
+  #profile {
+    justify-content: space-evenly;
     flex-direction: column-reverse;
   }
+  .textProfile::before {
+    font-size: 6em;
+    left: 8%;
+    transform: translateY(-25px);
+  }
+
   .picProfile {
     height: 450px;
     width: 325px;
+  }
+  /* product styling */
+  #product {
+    height: 225px;
+  }
+  #product::before {
+    font-size: 6em;
+    transform: translateY(75px);
+  }
+  #product .iconApp img {
+    width: 100%;
+  }
+  /* galery styling */
+  #galery::before {
+    font-size: 6em;
+    transform: translateY(50px);
+    left: -25px;
+  }
+  /* Quote styling */
+  #quote {
+    height: 300px;
+    overflow: hidden;
+  }
+  #quote h1 {
+    font-size: 2.6em;
+  }
+  #quote span p {
+    font-size: 0.7em;
+  }
+  #quote::before {
+    font-size: 4em;
+    left: -25px;
+    transform: translateY(125px);
+  }
+  /* about styling */
+  #about {
+  }
+  #about .iconSocial {
+    width: 80%;
   }
 }
