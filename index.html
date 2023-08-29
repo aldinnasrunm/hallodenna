@@ -1,124 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAVBAR</title>
-    <link rel="stylesheet" href="./style/styleNav.css" />
-    <link rel="stylesheet" href="./style/styleMain.css" />
-    <link rel="stylesheet" href="./style/font-awesome.min.css" />
-    <link rel="stylesheet" href="./style/glider.min.css" />
-  </head>
-  <body>
-    <header>
-      <div id="welcome">
-        <h1>WELCOME</h1>
-        <p>Of course I love U</p>
-      </div>
-    </header>
-    <nav>
-      <div class="logo">
-        <h4>Aldinnasrun</h4>
-      </div>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#profile">Product</a></li>
-        <li><a href="#galery">Galery</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">About</a></li>
-      </ul>
-      <div class="menu-toggle">
-        <input type="checkbox" name="check" id="" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style/output.css">
+    <title>Hello Denna</title>
+</head>
+<body>
+    <!-- tailwind css create navbar with 3 links and logo in the left -->
+    <nav class="bg-white p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="./dist/assets/logo.svg" alt="Logo" class="h-8 w-8 mr-2">
+                <a href="#" class="text-gray-800 font-semibold">Home</a>
+            </div>
+            <div class="flex space-x-4">
+                <img src="./dist/assets/hamburger.svg" alt="Logo" class="h-8 w-8 mr-2">
+                
+            </div>
+        </div>
     </nav>
-    <main>
-      <div id="profile">
-        <div class="textProfile">
-          <h1>Hello I'am Aldin</h1>
-          <p>scroll down for more</p>
-        </div>
-        <div class="picProfile">
-          <div class="subtitle"><i>"click heart if u like me"</i></div>
-          <div class="love">
-            <img src="./img/love-icon.svg" alt="love-image" />
-          </div>
-        </div>
-      </div>
-      <section id="product">
-        <h1 id="titleApp">What I use?</h1>
-        <div class="iconApp">
-          <span><img src="./img/figma.svg" alt="figma" /></span>
-          <span><img src="./img/inkscape.svg" alt="inkscape" /></span>
-          <span><img src="./img/vscode.svg" alt="vscode" /></span>
-          <span><img src="./img/spotify-only.svg" alt="spotify" /></span>
-        </div>
-      </section>
-      <section id="galery">
-        <h1 id="title">Game Room</h1>
-        <div class="glider">
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-          <div id="card">
-            <h1>TITLE HERE</h1>
-          </div>
-        </div>
-      </section>
-      <section id="quote">
-        <span>
-          <h1>LET'S COLABORATE</h1>
-          <p>
-            <i>the secret of getting ahead is getting started.</i>
-          </p>
-        </span>
-      </section>
-      <section id="about">
-        <span>
-          <p>If you interest to talk more with me, just hit the icons bellow</p>
-        </span>
-        <div class="iconSocial">
-          <a href="www.twitter.com/bakulanberas">
-            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i
-          ></a>
-          <a href="www.instagram.com/aldin.na">
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i
-          ></a>
-          <a href="#">
-            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i
-          ></a>
-          <a href="t.me/al_nasrun"
-            ><i class="fa fa-telegram fa-2x" aria-hidden="true"></i
-          ></a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>
-        <i>
-          <p>Create with 💙 by Aldin Nasrun</p>
-        </i>
-      </p>
-    </footer>
-    <!-- script place!!! -->
-    <script src="./script/glider.min.js"></script>
-    <script src="./script/script.js"></script>
-  </body>
+    <div class="container">
+        <h1 class="font-family : sans">Lorem, ipsum.</h1>
+    </div>
+</body>
 </html>
