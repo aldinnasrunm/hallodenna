@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <!-- tailwind css create navbar with 3 links and logo in the left -->
+    <!-- Navabar -->
     <nav class="bg-white p-4">
         <div class="container mx-auto flex items-center justify-end ">
             <div class="flex flex-auto items-center justify-center">
-                <img src="./dist/assets/logo.svg" alt="Logo" class="h-[56px] w-[56px] mr-2">
-                <p class="text-gray-800 text-4xl"> <a href="#">HelloDenna.</a></p>
+                <img src="./dist/assets/logo.svg" alt="Logo" class="h-10 w-10 mr-2">
+                <p class="text-gray-800 text-2xl"> <a href="#">HelloDenna.</a></p>
             </div>
             <div class="flex flex-none items-start">
                 <img src="./dist/assets/hamburger.svg" alt="Logo" class="h-8 w-8 mr-2">
@@ -22,51 +22,145 @@
         </div>
     </nav>
 
+    <!-- Hero section -->
+    <div class="hero w-full bg">
+        <!-- Top section -->
+        <div class="container mx-auto px-5 mt-28">
+            <div class="container bg-primary mx-auto">
+                <!-- clip image in div -->
+                <div class="container h-96 bg-[url('/dist/assets/perso.png')] bg-cover">
 
-    <!-- tailwind create container with bg-primaryu and clip image inside that -->
-    <div class="container mx-auto px-9 mt-28">
-        <div class="container bg-primary mx-auto">
-            <!-- clip image in div -->
-            <div class="container h-72 bg-[url('/dist/assets/perso.png')] bg-cover">
+                </div>
+            </div>
 
+            <h1 class="text-5xl pl-7 -mt-[3rem] z-20 w-56 absolute"> <span class="text-light">Lorem</span> ipsum dolor sit amet</h1>
+        </div>
+
+        <!-- Marquee running text -->
+        <div class="marquee inline-block -mt-">
+            <div class="marquee__wrap w-screen h-auto inline-block overflow-x-clip -mb-9">
+                <div class="relative flex overflow-x-hidden bg-test -rotate-6 w-[105%] -ml-3 shadow-lg">
+                    <div class="py-0 animate-marquee whitespace-nowrap flex items-center">
+                        <span class="mx-1 font-staatliches text-6xl">PASSIONATE </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">FUN</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">ATTENTION TO DETAIL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">PROBLEM SOLVER</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">CREATIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                    </div>
+
+                    <div class="absolute top-0 py-0 animate-marquee2 whitespace-nowrap flex items-center">
+                        <span class="mx-1 font-staatliches text-6xl">PASSIONATE </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">FUN</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">ATTENTION TO DETAIL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">PROBLEM SOLVER</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">CREATIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee__wrap w-screen h-auto inline-block overflow-x-clip">
+                <div class="relative flex overflow-x-hidden bg-test rotate-6 w-[110%] -ml-3 shadow-lg">
+                    <div class="py-0 animate-marquee whitespace-nowrap flex items-center">
+                        <span class="mx-1 font-staatliches text-6xl">ATTENTION TO DETAIL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">PROBLEM SOLVER</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">PASSIONATE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">CREATIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">FUN</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                    </div>
+
+                    <div class="absolute top-0 py-0 animate-marquee2 whitespace-nowrap flex items-center">
+                        <span class="mx-1 font-staatliches text-6xl">ATTENTION TO DETAIL</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">PROBLEM SOLVER</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">PASSIONATE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">CREATIVE</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                        <span class="mx-1 font-staatliches text-6xl">FUN</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#171513" />
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <h1 class="text-5xl pl-7 -mt-[3rem] z-20 w-56 absolute"> <span class="text-light">Lorem</span> ipsum dolor sit amet</h1>
     </div>
 
-    <!-- <div class="marquee__wrap w-full h-auto inline-block overflow-x-clip ">
-        <div class="w-[110%] overflow-hidden rotate-6 -ml-5">
-            <div class="marquee__content inline-block whitespace-nowrap bg-dark animate-marquee animation-duration-20s animation-iteration-count-infinite py-1 flex ">
-                <p class="text-light font-staatliches">CREATVE AND CONTRIBUTE </p>
-                <p class="text-light font-staatliches">CREATVE AND CONTRIBUTE </p>
-
-            </div>
+    <!-- Introduction section -->
+    <div class="container mx-auto flex flex-col items-center justify-end bg-dark h-full text-light mt-56 px-2 py-10">
+        
+        <!-- Logo Here -->
+        <div class="container flex ">
+            <p class="text-light font-kanit font-thin border px-6 py-2 rounded-full border-light">HelloDenna 🐒</p>
         </div>
+        
+        <!-- top section -->
+        <div class="flex flex-col">
+            <h1 class="text-5xl text-light font-kanit">
+                Have an awesome project?
+            </h1>
 
-    </div> -->
-
-
-    <div class="relative flex overflow-x-hidden">
-        <div class="py-12 animate-marquee whitespace-nowrap text-2xl">
-          <span class="mx-4">Marquee Item 1</span>
-          <span class="mx-4">Marquee Item 2</span>
-          <span class="mx-4">Marquee Item 3</span>
-          <span class="mx-4">Marquee Item 4</span>
-          <span class="mx-4">Marquee Item 5</span>
         </div>
-      
-        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          <span class="mx-4">Marquee Item 1</span>
-          <span class="mx-4">Marquee Item 2</span>
-          <span class="mx-4">Marquee Item 3</span>
-          <span class="mx-4">Marquee Item 4</span>
-          <span class="mx-4">Marquee Item 5</span>
-        </div>
-      </div>
-
 
     </div>
+
+
+
+
+
 </body>
 
 </html>

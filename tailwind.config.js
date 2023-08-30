@@ -12,7 +12,8 @@ module.exports = {
     // add Vidolaka font
     fontFamily: {
       'vidaloka': ['Vidolaka'],
-      'staatliches': ['Staatliches']
+      'staatliches': ['Staatliches'],
+      'kanit': ['Kanit']
     },
     extend: {
       animation: {
