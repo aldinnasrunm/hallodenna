@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style/output.css">
     <title>Hello Denna</title>
 </head>
+
 <body>
     <!-- tailwind css create navbar with 3 links and logo in the left -->
     <nav class="bg-white p-4">
-        <div class="container mx-auto flex items-center justify-between">
-            <div class="flex items-center">
-                <img src="./dist/assets/logo.svg" alt="Logo" class="h-8 w-8 mr-2">
-                <a href="#" class="text-gray-800 font-semibold">Home</a>
+        <div class="container mx-auto flex items-center justify-end ">
+            <div class="flex flex-auto items-center justify-center">
+                <img src="./dist/assets/logo.svg" alt="Logo" class="h-[56px] w-[56px] mr-2">
+                <p class="text-gray-800 text-4xl"> <a href="#">HelloDenna.</a></p>
             </div>
-            <div class="flex space-x-4">
+            <div class="flex flex-none items-start">
                 <img src="./dist/assets/hamburger.svg" alt="Logo" class="h-8 w-8 mr-2">
-                
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1 class="font-family : sans">Lorem, ipsum.</h1>
+
+
+    <!-- tailwind create container with bg-primaryu and clip image inside that -->
+    <div class="container mx-auto px-9 mt-28">
+        <div class="container bg-primary mx-auto">
+            <!-- clip image in div -->
+            <div class="container h-72 bg-[url('/dist/assets/perso.png')] bg-cover">
+
+            </div>
+        </div>
+
+        <h1 class="text-5xl pl-7 -mt-[3rem] z-20 w-56 absolute"> <span class="text-light">Lorem</span> ipsum dolor sit amet</h1>
+    </div>
+
+    <!-- <div class="marquee__wrap w-full h-auto inline-block overflow-x-clip ">
+        <div class="w-[110%] overflow-hidden rotate-6 -ml-5">
+            <div class="marquee__content inline-block whitespace-nowrap bg-dark animate-marquee animation-duration-20s animation-iteration-count-infinite py-1 flex ">
+                <p class="text-light font-staatliches">CREATVE AND CONTRIBUTE </p>
+                <p class="text-light font-staatliches">CREATVE AND CONTRIBUTE </p>
+
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <div class="relative flex overflow-x-hidden">
+        <div class="py-12 animate-marquee whitespace-nowrap text-2xl">
+          <span class="mx-4">Marquee Item 1</span>
+          <span class="mx-4">Marquee Item 2</span>
+          <span class="mx-4">Marquee Item 3</span>
+          <span class="mx-4">Marquee Item 4</span>
+          <span class="mx-4">Marquee Item 5</span>
+        </div>
+      
+        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+          <span class="mx-4">Marquee Item 1</span>
+          <span class="mx-4">Marquee Item 2</span>
+          <span class="mx-4">Marquee Item 3</span>
+          <span class="mx-4">Marquee Item 4</span>
+          <span class="mx-4">Marquee Item 5</span>
+        </div>
+      </div>
+
+
     </div>
 </body>
+
 </html>

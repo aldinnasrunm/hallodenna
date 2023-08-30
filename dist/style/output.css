@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -44,7 +48,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Vidolaka, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -434,7 +438,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +488,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -534,85 +538,278 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
+.container{
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
+@media (min-width: 1536px){
+  .container{
     max-width: 1536px;
   }
 }
 
-.mx-auto {
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.mr-2 {
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.-ml-5{
+  margin-left: -1.25rem;
+}
+
+.-mt-\[3rem\]{
+  margin-top: -3rem;
+}
+
+.mr-2{
   margin-right: 0.5rem;
 }
 
-.flex {
+.mt-28{
+  margin-top: 7rem;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.flex{
   display: flex;
 }
 
-.h-8 {
+.h-72{
+  height: 18rem;
+}
+
+.h-8{
   height: 2rem;
 }
 
-.w-8 {
+.h-\[56px\]{
+  height: 56px;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.w-56{
+  width: 14rem;
+}
+
+.w-8{
   width: 2rem;
 }
 
-.items-center {
+.w-\[110\%\]{
+  width: 110%;
+}
+
+.w-\[56px\]{
+  width: 56px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.flex-auto{
+  flex: 1 1 auto;
+}
+
+.flex-none{
+  flex: none;
+}
+
+.rotate-6{
+  --tw-rotate: 6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes marquee{
+  0%{
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee{
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee2{
+  0%{
+    transform: translateX(100%);
+  }
+
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee2{
+  animation: marquee2 25s linear infinite;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.items-center{
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-end{
+  justify-content: flex-end;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+.justify-center{
+  justify-content: center;
 }
 
-.p-4 {
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.overflow-x-clip{
+  overflow-x: clip;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
+}
+
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 21 19 / var(--tw-bg-opacity));
+}
+
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 87 54 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/dist\/assets\/perso\.png\'\)\]{
+  background-image: url('/dist/assets/perso.png');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.p-4{
   padding: 1rem;
 }
 
-.font-semibold {
-  font-weight: 600;
+.px-9{
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pl-7{
+  padding-left: 1.75rem;
+}
+
+.font-staatliches{
+  font-family: Staatliches;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-light{
+  --tw-text-opacity: 1;
+  color: rgb(243 243 243 / var(--tw-text-opacity));
 }
 
 * {
-  font-family: 'Vidaloka', serif;
+  font-family: "Vidaloka", sans-serif;
   --tw-text-opacity: 1;
   color: rgb(23 21 19 / var(--tw-text-opacity))
 }
+
+body{
+  overflow-x: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+}
+

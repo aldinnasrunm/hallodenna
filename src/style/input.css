@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
 
 * {
-    font-family: 'Vidaloka', serif;
+    font-family: "Vidaloka", sans-serif;
     @apply text-dark
 }
+
+body {
+    @apply bg-light
+    overflow-x-hidden
+}
+
